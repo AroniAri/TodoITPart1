@@ -1,16 +1,31 @@
 package se.lexicon;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main(String[] args) {
-        // Create an instance of Person
-        Person person = new Person(4, "Nisse", "Olsson", "nisse@gmail.com");
 
-        // Get and print the summary of the person
-        System.out.println(person.getSummary());
+
+
+public class App {
+    public static void main(String[] args) throws InterruptedException {
+        // Create an instance of AppUser
+        AppRole ROLE_APP_USER;
+        ROLE_APP_USER = new AppUserDemo().getRole();
+        AppUserDemo user1 = new AppUserDemo();
+        AppUserDemo user2 = new AppUserDemo();
+
+        // Print the users
+        System.out.println(user1);
+        System.out.println(user2);
+
+        System.out.println("Are users equal? " + user1.equals(user2));
+
+
+        System.out.println("User1 hash code: " + user1.hashCode());
+        System.out.println("User2 hash code: " + user2.hashCode());
+
+
+
     }
 }
+
+
+
+

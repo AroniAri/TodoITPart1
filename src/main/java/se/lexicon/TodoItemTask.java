@@ -20,22 +20,20 @@ public class TodoItemTask {
         this.assigned = (assignee != null);
     }
 
-    // Getter for id
+
     public int getId() {
         return this.id;
     }
 
-    // Setter for id
+
     public void setId(int id) {
         this.id = id;
     }
 
-    // Getter for assigned
     public boolean isAssigned() {
         return this.assigned;
     }
 
-    // Getter for todoItem
     public TodoItem getTodoItem() {
         return this.todoItem;
     }
@@ -48,12 +46,10 @@ public class TodoItemTask {
         this.todoItem = todoItem;
     }
 
-    // Getter for assignee
     public Person getAssignee() {
         return this.assignee;
     }
 
-    // Setter for assignee
     public void setAssignee(Person assignee) {
         this.assignee = assignee;
         this.assigned = (assignee != null);
